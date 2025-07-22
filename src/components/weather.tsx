@@ -43,11 +43,13 @@ export default function Weather() {
     return (
         <div className="">
         {weather ? (
-         <>
-            <img src={`/weather-icons/${weather.symbol}.png`} alt="Værikon: ${weather.symbol}" />
-            <p className="text-6xl">{Math.round(weather.temperature)}°C</p>
-            <p className="text-xl">{regn}</p>
-        </>
+        <div className="flex flex-col items-center text-center w-full">
+            <p className="text-xl font-bold">{regn}</p>
+            <div className="flex items-center gap-4">
+                <img className="w-18" src={`/weather-icons/${weather.symbol}.png`} alt={`Værikon: ${weather.symbol}`} />
+                <p className="text-6xl">{Math.round(weather.temperature)}°C</p>
+            </div>
+        </div>
         ) : (
        <p>Laster værdata...</p>
             )}

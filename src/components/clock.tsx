@@ -27,8 +27,8 @@ const dateString = time.toLocaleDateString('no-NO', {
   return(
     
       <div className="text-white text-center ">
+        <p className="text-3xl mt-2">{dateString}</p>
         <h1 className="text-8xl font-mono font-bold">{timeString}</h1>
-        <p className="text-2xl mt-2">{dateString}</p>
     </div>
   )
 }
