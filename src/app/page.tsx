@@ -9,16 +9,16 @@ export default function Home() {
    <div className="container max-w-screen-1xl mx-auto px-4">
     <main className="flex flex-col gap-4 p-5 items-center justify-center h-full text-center">
 
-      <div className="p-9  shadow-2xl rounded-2xl w-[50ch] text-center">
+      <div className="p-9 rounded-2xl w-[50ch] text-center">
         <Clock />
         
       </div>
 
-      <div className="p-9  rounded-2xl  h-[30ch] shadow-2xl">
+      <div className="p-9  rounded-2xl  h-[30ch]">
         <Weather />
       </div>
 
-      <div className="p-9  shadow-2xl rounded-2xl w-[80ch] text-center">
+      <div className="p-9 rounded-2xl w-[80ch] text-center">
         <Ruter />
       </div>
 
