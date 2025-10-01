@@ -43,7 +43,7 @@ export default function Weather() {
     return (
         <div className="">
         {weather ? (
-        <div className="items-center text-center p-9 rounded-2xl bg-amber-800 w-[30ch] h-[16ch]">
+        <div className="items-center text-center">
             <p className="text-xl font-bold">{regn}</p>
             <div className="flex items-center gap-4">
                 <img className="w-18" src={`/weather-icons/${weather.symbol}.png`} alt={`Værikon: ${weather.symbol}`} />
